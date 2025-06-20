@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../components/ui/Navbar'
 import Hero from '../components/ui/Hero'
+import Info from '../components/ui/Info'
+import Footer from '../components/ui/Footer'
 
 export default function Landing() {
   return (
@@ -8,9 +10,10 @@ export default function Landing() {
       <div className='t-0'><Navbar></Navbar></div>
       
       <div className="mt-20">
-  <Hero />
-  <div className="h-[2000px] bg-yellow-300">Scroll Test Area</div>
-</div>
+     <Hero />
+    <Info></Info>
+    <Footer></Footer>
+   </div>
       
 
     </div>

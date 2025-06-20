@@ -14,18 +14,18 @@ const Navbar = () => {
       className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-md" // Added shadow for depth
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        {/* Left: Logo and Brand Name */}
+       
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <div className="rounded-full transition-colors duration-200 hover:bg-[#001F61] text-white p-1">
-            {/* Using the 8K enhanced image for the logo */}
+          
             <img src="wallii.png" className="h-10 w-10" alt="Walli-i Logo" />
           </div>
           <span className="self-center text-2xl font-extrabold whitespace-nowrap text-white">
-            Wall-i
+            Wal-i
           </span>
         </a>
 
-        {/* Right: Get Started Button & Mobile Menu Toggle */}
+       
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">
          <button
   type="button"
@@ -36,7 +36,7 @@ const Navbar = () => {
   Get started
 </button>
           <button
-            onClick={toggleMobileMenu} // Attach click handler
+            onClick={toggleMobileMenu}
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600 transition-colors duration-200"
             aria-controls="navbar-sticky"
@@ -48,7 +48,7 @@ const Navbar = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 17 14"
-              stroke="currentColor" // Changed fill to stroke for better icon visibility
+              stroke="currentColor" 
               strokeWidth="2"
             >
               <path
@@ -60,11 +60,11 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Middle: Nav Items (Responsive) */}
+        
         <div
           className={`${
-            isMobileMenuOpen ? 'block' : 'hidden' // Conditional rendering based on state
-          } items-center   justify-between w-full md:flex md:w-auto md:order-1 transition-all duration-300 ease-in-out`} // Added transition for smooth opening/closing
+            isMobileMenuOpen ? 'block' : 'hidden' 
+          } items-center   justify-between w-full md:flex md:w-auto md:order-1 transition-all duration-300 ease-in-out`} 
           id="navbar-sticky"
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700 w-full"> {/* Changed md:bg-white to md:bg-transparent */}
